@@ -1,10 +1,25 @@
 name: clipboard-ai-mcp
-description: "MEOK AI Labs — clipboard-ai-mcp"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/clipboard-ai-mcp
-license: MIT
-categories: [Productivity, Utilities]
-tags: [clipboard, copy-paste, clipboard-manager, text-clipboard]
-runtime: python
-entrypoint: server.py
+description: "clipboard-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+version: 1.0.0
+tools:
+- name: get_clipboard
+  description: MEOK AI Labs tool.
+  parameters: []
+- name: set_clipboard
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: text
+    type: string
+    required: true
+- name: clipboard_history
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: limit
+    type: integer
+    required: false
+- name: smart_paste
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: format
+    type: string
+    required: false
