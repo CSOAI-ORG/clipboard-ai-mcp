@@ -1,5 +1,5 @@
 name: clipboard-ai-mcp
-description: "clipboard-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+description: "MEOK AI Labs \u2014 Clipboard history and smart paste operations."
 version: 1.0.0
 tools:
 - name: get_clipboard
