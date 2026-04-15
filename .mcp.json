@@ -1,6 +1,6 @@
 {
   "name": "clipboard-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs \u2014 Clipboard history and smart paste operations.",
+  "description": "AI-powered clipboard ai MCP server for agents. Supports get clipboard, set clipboard, clipboard history. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
