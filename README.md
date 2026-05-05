@@ -1,46 +1,38 @@
-# Clipboard AI MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Clipboard history and smart paste operations
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/clipboard-ai-mcp)](https://github.com/CSOAI-ORG/clipboard-ai-mcp/stargazers)
+
+# uclipboardU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/clipboard-ai-mcp)](https://www.npmjs.com/package/@meok-ai/clipboard-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/clipboard-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install clipboard-ai-mcp
+# or
+npm install -g @meok-ai/clipboard-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `get_clipboard`
-Get current clipboard contents.
-
-### `set_clipboard`
-Set clipboard contents.
-
-**Parameters:**
-- `text` (str): Text to copy to clipboard
-
-### `clipboard_history`
-View clipboard history.
-
-**Parameters:**
-- `limit` (int): Number of entries (default 10)
-
-### `smart_paste`
-Smart paste with format conversion.
-
-**Parameters:**
-- `format` (str): Output format (default 'plain')
-
-## Authentication
-
-Free tier: 30 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
