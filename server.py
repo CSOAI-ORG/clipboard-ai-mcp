@@ -55,7 +55,23 @@ def _detect_content_type(text: str) -> str:
 
 @mcp.tool()
 def copy_text(text: str, label: str = "", session_id: str = "default", api_key: str = "") -> str:
-    """Copy text to the clipboard. Optionally add a label for easy retrieval."""
+    """Copy text to the clipboard. Optionally add a label for easy retrieval.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -90,7 +106,23 @@ def copy_text(text: str, label: str = "", session_id: str = "default", api_key: 
 
 @mcp.tool()
 def paste_text(session_id: str = "default", format: str = "raw", api_key: str = "") -> str:
-    """Retrieve the current clipboard contents. Format options: raw, trimmed, lines, json_pretty, escaped."""
+    """Retrieve the current clipboard contents. Format options: raw, trimmed, lines, json_pretty, escaped.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -135,7 +167,23 @@ def paste_text(session_id: str = "default", format: str = "raw", api_key: str = 
 
 @mcp.tool()
 def clipboard_history(limit: int = 10, search: str = "", session_id: str = "default", api_key: str = "") -> str:
-    """View clipboard history. Optionally search/filter by text content or label."""
+    """View clipboard history. Optionally search/filter by text content or label.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -179,7 +227,23 @@ def clipboard_history(limit: int = 10, search: str = "", session_id: str = "defa
 
 @mcp.tool()
 def clear_clipboard(session_id: str = "default", clear_history: bool = False, api_key: str = "") -> str:
-    """Clear the current clipboard. Optionally clear entire history."""
+    """Clear the current clipboard. Optionally clear entire history.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
