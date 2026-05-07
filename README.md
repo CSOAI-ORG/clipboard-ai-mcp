@@ -1,3 +1,5 @@
+[![clipboard-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/clipboard-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/clipboard-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/clipboard-ai-mcp)](https://github.com/CSOAI-ORG/clipboard-ai-mcp/stargazers)
