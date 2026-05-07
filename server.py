@@ -71,6 +71,13 @@ def copy_text(text: str, label: str = "", session_id: str = "default", api_key: 
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        text (str): The text to analyze or process.
+        label (str): The label to analyze or process.
+        session_id (str): The session id to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -136,6 +143,12 @@ def paste_text(session_id: str = "default", format: str = "raw", api_key: str = 
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        session_id (str): The session id to analyze or process.
+        format (str): The format to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -211,6 +224,13 @@ def clipboard_history(limit: int = 10, search: str = "", session_id: str = "defa
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        limit (int): The limit to analyze or process.
+        search (str): The search to analyze or process.
+        session_id (str): The session id to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -285,6 +305,12 @@ def clear_clipboard(session_id: str = "default", clear_history: bool = False, ap
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        session_id (str): The session id to analyze or process.
+        clear_history (bool): The clear history to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
