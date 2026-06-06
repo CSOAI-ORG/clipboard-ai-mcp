@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""In-memory clipboard with history and smart paste operations. — MEOK AI Labs."""
+"""
+In-memory clipboard with history and smart paste operations. — MEOK AI Labs."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, re, hashlib
@@ -95,7 +95,7 @@ def copy_text(text: str, label: str = "", session_id: str = "default", api_key: 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -166,7 +166,7 @@ def paste_text(session_id: str = "default", format: str = "raw", api_key: str = 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -248,7 +248,7 @@ def clipboard_history(limit: int = 10, search: str = "", session_id: str = "defa
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -328,7 +328,7 @@ def clear_clipboard(session_id: str = "default", clear_history: bool = False, ap
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -350,5 +350,8 @@ def clear_clipboard(session_id: str = "default", clear_history: bool = False, ap
     })
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

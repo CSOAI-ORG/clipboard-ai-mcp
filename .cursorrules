@@ -1,0 +1,9 @@
+# clipboard-ai-mcp - Auto-trigger Rules
+
+When the user asks about clipboard, use clipboard-ai-mcp tools: copy_text, paste_text, clipboard_history, clear_clipboard
+
+**MCP server for clipboard ai mcp operations**
+
+Install: `pip install clipboard-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

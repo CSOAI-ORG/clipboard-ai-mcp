@@ -1,0 +1,33 @@
+# clipboard-ai-mcp
+# **MCP server for clipboard ai mcp operations**
+
+## Install
+```bash
+pip install clipboard-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `copy_text`
+Copy text to the clipboard. Optionally add a label for easy retrieval.
+
+### `paste_text`
+Retrieve the current clipboard contents. Format options: raw, trimmed, lines, json_pretty, escaped.
+
+### `clipboard_history`
+View clipboard history. Optionally search/filter by text content or label.
+
+### `clear_clipboard`
+Clear the current clipboard. Optionally clear entire history.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

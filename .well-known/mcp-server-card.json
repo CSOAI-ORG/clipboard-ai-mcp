@@ -1,0 +1,25 @@
+{
+  "name": "clipboard-ai-mcp",
+  "title": "Clipboard Ai Mcp",
+  "description": "AI-powered clipboard ai MCP server for agents. Supports get clipboard, set clipboard, clipboard history. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "copy_text"
+    },
+    {
+      "name": "paste_text"
+    },
+    {
+      "name": "clipboard_history"
+    },
+    {
+      "name": "clear_clipboard"
+    }
+  ]
+}
