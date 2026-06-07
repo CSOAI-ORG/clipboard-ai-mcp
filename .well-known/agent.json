@@ -1,0 +1,59 @@
+{
+  "name": "clipboard-ai-mcp",
+  "description": "Clipboard Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/clipboard-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "copy_text",
+      "name": "Copy Text",
+      "description": "copy_text via clipboard-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "paste_text",
+      "name": "Paste Text",
+      "description": "paste_text via clipboard-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "clipboard_history",
+      "name": "Clipboard History",
+      "description": "clipboard_history via clipboard-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "clear_clipboard",
+      "name": "Clear Clipboard",
+      "description": "clear_clipboard via clipboard-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

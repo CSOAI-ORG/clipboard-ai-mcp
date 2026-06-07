@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "clipboard-ai-mcp",
+    "description": "Clipboard Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "clipboard-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "copy_text",
+      "paste_text",
+      "clipboard_history",
+      "clear_clipboard"
+    ]
+  }
+}
